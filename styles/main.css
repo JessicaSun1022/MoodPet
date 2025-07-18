@@ -1,0 +1,157 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;           
+}
+
+body {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  grid-template-rows: 80px 1fr auto;
+  grid-template-areas:
+    "sidebar stats"
+    "sidebar main"
+    "sidebar footer";
+  font-family: sans-serif;
+  background-color: lightcoral;
+  color: rgb(34, 34, 34);
+}
+
+/*SIDEBAR*/
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+  background-color: rgb(231, 92, 92);
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  margin: 12px 0;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+
+.icon-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*STATS BAR*/
+.stats-bar {
+  grid-area: stats;
+  display: flex;
+  flex:1;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 16px;
+  background: rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  gap: 16px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex:1;
+}
+
+.stat img {
+  width: 32px;
+  height: 32px;
+}
+
+.progress {
+  width: 120px;
+  max-width: 250px;
+  height: 8px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  flex:1;
+}
+
+.progress .fill {
+  height: 100%;
+  background-color: rgb(17,126,113);
+  width: 0%; /* updated via JS */
+}
+
+/*MAIN GAME AREA*/
+.game-area {
+  grid-area: main;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pet-image {
+  position: relative;
+  width: 400px;
+  height: auto;
+  z-index: 1;
+}
+
+/*ITEMS + XP*/
+.bottom-bar {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.2);
+  padding: 8px 0;
+}
+
+.items-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.item-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+}
+
+.item-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.xp-bar {
+  width: 80%;
+  height: 6px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.xp-bar .fill {
+  height: 100%;
+  background-color: rgb(17,126,113);
+  width: 0%; /* updated via JS */
+}
