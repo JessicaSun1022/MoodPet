@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mood Pet – Store</title>
+  <link rel="stylesheet" href="styles/store.css" />
+</head>
+<body>
+
+  <nav class="sidebar">
+    <button class="icon-btn active"><img src="sidebar/store.png" alt="Store" /></button>
+    <button class="icon-btn"><img src="sidebar/info.png" alt="Info" /></button>
+    <button class="icon-btn"><img src="sidebar/background.png" alt="Background" /></button>
+    <button class="icon-btn"><img src="sidebar/pet.png" alt="Pet" /></button>
+  </nav>
+
+  <main class="store-area">
+    <h1>Store</h1>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="pets">Pets</button>
+      <button class="tab-btn"       data-tab="accessories">Accessories</button>
+      <button class="tab-btn"       data-tab="backgrounds">Backgrounds</button>
+    </div>
+
+    <div class="tab-content">
+      <div id="pets" class="tab-pane">
+        <div class="item-card">
+          <img src="pets/cat.png" alt="Cat" />
+          <div class="item-info"></div>
+            <h2>Cat</h2>
+            <p>Cost: 20 coins</p>
+            <button class="buy-btn">Buy</button>
+        </div>
+        </div>
+        <div class="item-card">
+          <img src="pets/frog.png" alt="Frog" />
+          <div class="item-info">
+            <h2>Frog</h2>
+            <p>Cost: 15 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+    </div>
+
+      <div id="accessories" class="tab-pane hidden">
+        <div class="item-card">
+          <img src="customization/accessories/bow.png" alt="Bow" />
+          <div class="item-info">
+            <h2>Bow</h2>
+            <p>Cost: 8 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="backgrounds" class="tab-pane hidden">
+        <div class="item-card">
+          <img src="backgrounds/forestBG.png" alt="Forest" />
+          <div class="item-info">
+            <h2>Forest</h2>
+            <p>Cost: 25 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="backgrounds/beachBG.png" alt="Beach" />
+          <div class="item-info">
+            <h2>Beach</h2>
+            <p>Cost: 30 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/store.js"></script>
+</body>
+</html>
