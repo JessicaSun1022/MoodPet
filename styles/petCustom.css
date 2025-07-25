@@ -37,11 +37,17 @@ body{
 .controls button{
     background-color: lightcoral;
     border:none;
+    border-radius: 4px;
     font-size: 24px;
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
+
+.controls button:active{
+    background-color: rgb(224,98,98);
+}
+
 
 #continue-button{
     margin-top: 24px;

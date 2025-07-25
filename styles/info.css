@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(240, 128, 128);
+    color: rgb(34, 34, 34);
+    font-family: sans-serif;
+}
+
+#overview {
+    font-size: 20px;
+    max-width: 1300px;
+    margin: 16px auto;
+}
+
+#okay-button {
+    background-color: rgb(17, 126, 113);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+#okay-button:hover {
+    background-color: rgb(14, 103, 94);
+}

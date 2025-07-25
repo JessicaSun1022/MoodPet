@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mood Pet – Store</title>
-  <link rel="stylesheet" href="styles/store.css" />
+  <title>Mood Pet: Store</title>
+  <link rel="stylesheet" href="styles/shop.css" />
+
 </head>
+
 <body>
 
   <nav class="sidebar">
     <button class="icon-btn active"><img src="sidebar/store.png" alt="Store" /></button>
-    <button class="icon-btn"><img src="sidebar/info.png" alt="Info" /></button>
     <button class="icon-btn"><img src="sidebar/background.png" alt="Background" /></button>
     <button class="icon-btn"><img src="sidebar/pet.png" alt="Pet" /></button>
+    <button class="icon-btn"><img src="sidebar/info.png" alt="Info" /></button>
   </nav>
 
   <main class="store-area">
-    <h1>Store</h1>
+    <div class="store-header">
+      <h1>Store</h1>
+      <div class="coins">
+        <img src="sidebar/coin.png" alt="Coins" />
+        <span id="coin-amount">0</span>
+      </div>
+    </div>
 
     <div class="tabs">
       <button class="tab-btn active" data-tab="pets">Pets</button>
-      <button class="tab-btn"       data-tab="accessories">Accessories</button>
-      <button class="tab-btn"       data-tab="backgrounds">Backgrounds</button>
+      <button class="tab-btn" data-tab="accessories">Accessories</button>
+      <button class="tab-btn" data-tab="backgrounds">Backgrounds</button>
     </div>
 
     <div class="tab-content">
       <div id="pets" class="tab-pane">
         <div class="item-card">
           <img src="pets/cat.png" alt="Cat" />
-          <div class="item-info"></div>
+          <div class="item-info">
             <h2>Cat</h2>
             <p>Cost: 20 coins</p>
             <button class="buy-btn">Buy</button>
-        </div>
+          </div>
         </div>
         <div class="item-card">
           <img src="pets/frog.png" alt="Frog" />
@@ -42,13 +49,53 @@
             <button class="buy-btn">Buy</button>
           </div>
         </div>
-    </div>
+        <div class="item-card">
+          <img src="pets/racoon.png" alt="racoon" />
+          <div class="item-info">
+            <h2>Racoon</h2>
+            <p>Cost: 30 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="pets/monkey.png" alt="monkey" />
+          <div class="item-info">
+            <h2>Monkey</h2>
+            <p>Cost: 30 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="pets/panda.png" alt="panda" />
+          <div class="item-info">
+            <h2>Panda</h2>
+            <p>Cost: 45 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="pets/rPanda.png" alt="red panda" />
+          <div class="item-info">
+            <h2>Red Panda</h2>
+            <p>Cost: 45 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+      </div>
 
       <div id="accessories" class="tab-pane hidden">
         <div class="item-card">
           <img src="customization/accessories/bow.png" alt="Bow" />
           <div class="item-info">
             <h2>Bow</h2>
+            <p>Cost: 8 coins</p>
+            <button class="buy-btn">Buy</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <img src="customization/accessories/glasses.png" alt="glasses" />
+          <div class="item-info">
+            <h2>Glasses</h2>
             <p>Cost: 8 coins</p>
             <button class="buy-btn">Buy</button>
           </div>
@@ -76,6 +123,7 @@
     </div>
   </main>
 
-  <script src="scripts/store.js"></script>
+  <script src="scripts/gameState.js"></script>
 </body>
+
 </html>
