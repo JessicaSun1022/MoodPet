@@ -14,8 +14,8 @@
 
     const accessoryPositions = {
         tophat: {offsetX: 0.33, offsetY: 0.05, scale: 0.8},
-        bow: {offsetX: 0.2, offsetY: -0.4, scale: 0.6},
-        glasses: {offsetX: 0.15, offsetY: -0.05, scale: 0.8}
+        bow: {offsetX: 0.35, offsetY: -0.1, scale: 0.6},
+        glasses: {offsetX: 0.34, offsetY: -0.2, scale: 0.8}
     };
     
     function updateCustomizations(){

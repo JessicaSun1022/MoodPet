@@ -108,6 +108,20 @@
     document
         .getElementById('continue-button')
         .addEventListener('click', () =>{
+            const curPet = gameState.currentPet;
+            const unlockedPet = gameState.unlocked.pets || [];
+            if(!unlockedPet.includes(curPet)){
+                alert('This pet is locked! Please select an unlocked pet.');
+                return;
+            }
+
+            const curAcc = gameState.currentAccessory;
+            const unlockedAcc = gameState.unlocked.accessories || [];
+            if(curAcc && !unlockedAcc.includes(curAcc)){
+                alert('That accessory is locked! Please selecct an unlocked accessory');
+                return;
+            }
+            
             window.location.href = 'backgroundCustom.html';
         });
 })();

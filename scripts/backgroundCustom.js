@@ -41,6 +41,12 @@
     document
         .getElementById('continue-button')
         .addEventListener('click',() =>{
+            const curBg = gameState.currentBackground;
+            const unlockedBg = gameState.unlocked.backgrounds || [];
+            if(!unlockedBg.includes(curBg)){
+                alert('That background is locked! Please select and unlocked background.');
+                return;
+            }
             window.location.href = 'main.html';
         });
 })();
