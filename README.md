@@ -1,9 +1,12 @@
 # MoodPet
-What does this project do? 
-    This project is called MoodPet and is a tamagotchi like game where you try to keep your pet alive by keeping its overall happiness bar above 0. This bar is influenced by 3 other stats: hunger, playfulness, and hygeine. You must use the given items to keep your pet alive, level up, and collect coins. With these coins you can unlocked more pets, accessories, and even backgrounds!
-Why did I make this project?
-    I wanted to make a semi easy (was harder than planned) html/css/javascript game while I learned how to code in html, css, and javascript. I figured this game would help me get more familiar with html, css, and javascript and help me become more confident in coding in these languages for my other future projects.
-How did I make this project?
-    At first, I drafted in general what features I would like in the game as well as the pages. Once this was done I began working on the html/css for each page. I would first do the html for the general actions/buttons and then format the page using css. I would do this for all the pages I wanted in my game and then move onto the JS. I was forced to edit some html/css to make some of my JS work but for the most part it was fine. At the very end I realized that my habit of not commenting my code left most of it hard to read. So I went back and commented important sections.
-What I strugged with and what I learned?
-    I struggled the most with the Javascript section. Despite having coding knowledge from Java, I didn't know any Javascript. As such, I had to watch multiple full courses and crash courses to familiarize myself well enough to code my project. I also used google to find the code that I needed sometimes. However, I was able to learn how to code in html, css, and Javascript better because of this Project.
+1. What does this project do? 
+    This project is called MoodPet. It is a Tamagotchi-like game where you try to keep your pet alive by keeping its overall happiness bar above 0. This bar is influenced by 3 other stats: hunger, playfulness, and hygiene. You must use the given items to keep your pet happy, level up, and collect coins. These coins can be used to unlock more pets, accessories, and even backgrounds!
+
+2. Why did I make this project?
+    I wanted to make a relatively simple (though it was harder than planned) HTML/CSS/JavaScript game as a way to learn how to code in these languages. I figured this game would help me get more familiar with HTML, CSS, and JavaScript, and help me become more confident in coding in these languages for my other future projects.
+
+3. How did I make this project?
+    I started by drafting a general list of features I would like in the game, as well as the different pages. From there, I started building each page's HTML and CSS. I started with the HTML for actions and buttons, then styled the page using CSS. After finishing the layout of all the pages, I moved on to writing the JavaScript. I had to tweak some of the HTML and CSS to make the JavaScript work, but overall most of it didn't need any changes. Toward the end, I realized that my bad habit of not commenting my code made it hard to read. As such, I went back and added comments to show the important sections of my code.
+
+4. What I strugged with and what I learned?
+    I struggled the most with the JavaScript. Even though I had some coding background in Java and Python, I didn't know any JavaScript (for the most part). I had to watch several full-length courses and crash courses even before I started my project to get familiar with it. Fortunately, the projects in those courses covered a lot of what I needed, so they helped a ton. In the end, I got a better understanding of HTML, CSS, and JavaScript through this project. I hope to carry this knowledge over and make my next project even better.
