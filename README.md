@@ -1,2 +1,9 @@
 # MoodPet
-Tamagotchi like game 
+What does this project do? 
+    This project is called MoodPet and is a tamagotchi like game where you try to keep your pet alive by keeping its overall happiness bar above 0. This bar is influenced by 3 other stats: hunger, playfulness, and hygeine. You must use the given items to keep your pet alive, level up, and collect coins. With these coins you can unlocked more pets, accessories, and even backgrounds!
+Why did I make this project?
+    I wanted to make a semi easy (was harder than planned) html/css/javascript game while I learned how to code in html, css, and javascript. I figured this game would help me get more familiar with html, css, and javascript and help me become more confident in coding in these languages for my other future projects.
+How did I make this project?
+    At first, I drafted in general what features I would like in the game as well as the pages. Once this was done I began working on the html/css for each page. I would first do the html for the general actions/buttons and then format the page using css. I would do this for all the pages I wanted in my game and then move onto the JS. I was forced to edit some html/css to make some of my JS work but for the most part it was fine. At the very end I realized that my habit of not commenting my code left most of it hard to read. So I went back and commented important sections.
+What I strugged with and what I learned?
+    I struggled the most with the Javascript section. Despite having coding knowledge from Java, I didn't know any Javascript. As such, I had to watch multiple full courses and crash courses to familiarize myself well enough to code my project. I also used google to find the code that I needed sometimes. However, I was able to learn how to code in html, css, and Javascript better because of this Project.
