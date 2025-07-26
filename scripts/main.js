@@ -12,12 +12,14 @@
     const petImg = document.querySelector('.pet-image');
     const accImg = document.getElementById('acc-image');
 
+    //Accessory positioning 
     const accessoryPositions = {
         tophat: {offsetX: 0.33, offsetY: 0.05, scale: 0.8},
         bow: {offsetX: 0.35, offsetY: -0.1, scale: 0.6},
         glasses: {offsetX: 0.34, offsetY: -0.2, scale: 0.8}
     };
     
+    //Load selected customization
     function updateCustomizations(){
         const bgKey = gameState.currentBackground || 'starterBackground';
         const petKey = gameState.currentPet || 'dog';
@@ -34,6 +36,7 @@
         }
     }
 
+    //Position pet & accessory
     function positionEverything(){
         const area = document.querySelector('.game-area').getBoundingClientRect();
         const petComputedStyle = window.getComputedStyle(petImg);
@@ -63,6 +66,7 @@
         accImg.style.transformOrigin = 'top left';
     }
 
+    //Wait for everything to load before positioning
     window.addEventListener('DOMContentLoaded', () =>{
         updateCustomizations();
         setTimeout(positionEverything, 100);
@@ -83,7 +87,7 @@
     
     const itemBtns = Array.from(document.querySelectorAll('.item-btn'));
 
-    //Action definitions
+    //Action effects
     const actions = {
         feed: { hunger: +15, hygiene: -15 },
         play: { playfulness: +20, hunger: -20 },
@@ -93,6 +97,7 @@
     const xpPerAction = 10;
     const xpToLevel = 100;
 
+    //Render stat bars
     function renderStats() {
         const s = gameState.stats;
         ['hunger', 'playfulness', 'hygiene'].forEach(key => {
@@ -131,6 +136,7 @@
         renderStats();
     }
 
+    //Hook item buttons to actions
     itemBtns.forEach(btn => {
         const src = btn.querySelector('img').getAttribute('src');
         let type = '';
@@ -141,6 +147,7 @@
         btn.addEventListener('click', () => performAction(type));
     });
 
+    //Stat decay
     const decayRate = { hunger: -3, playfulness: -4, hygiene: -2 };
     const decayInterval = 2500;
 
@@ -159,6 +166,7 @@
         }
     }, 500);
 
+    //Sidebar
     const [storeBtn, bgBtn, petBtn, infoBtn] = document.querySelectorAll('.sidebar .icon-btn');
     storeBtn.addEventListener('click',() => {
         window.location.href = 'shop.html';

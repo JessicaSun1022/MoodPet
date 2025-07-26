@@ -5,6 +5,7 @@
     const panes = Array.from(document.querySelectorAll('.tab-pane'));
     const buyButtons = Array.from(document.querySelectorAll('.buy-btn'));
 
+    //Update coins
     function updateCoinDisplay(){
         coinAmount.textContent = gameState.coins;
     }
@@ -19,6 +20,7 @@
         return card.closest('.tab-pane').id;
     }
 
+    //Switching tabs (pets to accessory)
     tabBtns.forEach(btn =>{
         btn.addEventListener('click', () =>{
             tabBtns.forEach(b => b.classList.remove('active'));
@@ -32,6 +34,7 @@
         });
     });
 
+    //Disable button for owned items
     buyButtons.forEach(btn =>{
         const card = btn.closest('.item-card');
         const key = getItemKey(card);
@@ -45,6 +48,7 @@
         }
     });
 
+    //Buy logic
     buyButtons.forEach(btn =>{
         btn.addEventListener('click', () =>{
             const card = btn.closest('.item-card');
@@ -76,6 +80,7 @@
 
     updateCoinDisplay();
 
+    //Sidebar
     const [storeBtn, bgBtn, petBtn, infoBtn] = document.querySelectorAll('.sidebar .icon-btn');
     storeBtn.addEventListener('click',() => {
         window.location.href = 'shop.html';

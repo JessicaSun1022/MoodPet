@@ -1,7 +1,9 @@
 (() =>{
+    //Avaialbe backgrounds & lock
     const bgOptions = ['starterBackground', 'forestBG', 'beachBG'];
     const lockImg = 'backgrounds/lock.png';
 
+    //Use background from save if available
     let bgIndex = 0;
     if(gameState.currentBackground){
         const i = bgOptions.indexOf(gameState.currentBackground);
@@ -12,6 +14,7 @@
     const nextBtn = document.getElementById('bg-next');
     const bgImg = document.getElementById('bg-image');
 
+    //Update the background based on index
     function updateBg(){
         const key = bgOptions[bgIndex];
         const unlocked = gameState.unlocked.backgrounds || [];
@@ -27,6 +30,7 @@
         saveState();
     }
 
+    //Arrow buttons
     prevBtn.addEventListener('click',() =>{
         bgIndex = (bgIndex - 1 + bgOptions.length) % bgOptions.length;
         updateBg();
@@ -38,6 +42,7 @@
 
     updateBg();
 
+    //Continue
     document
         .getElementById('continue-button')
         .addEventListener('click',() =>{

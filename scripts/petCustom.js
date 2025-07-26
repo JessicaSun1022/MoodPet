@@ -13,6 +13,7 @@
     const petNextBtn = document.getElementById('pet-next');
     const petImg = document.getElementById('pet-image');
 
+    //Update display and check if unlocked
     function updatePet(){
         const key = petOptions[petIndex];
         const unlocked = gameState.unlocked.pets || [];
@@ -76,6 +77,7 @@
 
     updateAcc();
 
+    //Gender selector
     const genderOptions = ['Female', 'Male'];
     let genderIndex = 0;
     if(gameState.currentGender){

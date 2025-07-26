@@ -8,7 +8,7 @@
 </head>
 
 <body>
-
+  <!--Sidebar-->
   <nav class="sidebar">
     <button class="icon-btn active"><img src="sidebar/store.png" alt="Store" /></button>
     <button class="icon-btn"><img src="sidebar/background.png" alt="Background" /></button>
@@ -19,19 +19,21 @@
   <main class="store-area">
     <div class="store-header">
       <h1>Store</h1>
-      <button id = "exit-btn" class = "exit-btn">X</button>
+      <button id="exit-btn" class="exit-btn">X</button>
       <div class="coins">
         <img src="sidebar/coin.png" alt="Coins" />
         <span id="coin-amount">0</span>
       </div>
     </div>
 
+    <!--Selection-->
     <div class="tabs">
       <button class="tab-btn active" data-tab="pets">Pets</button>
       <button class="tab-btn" data-tab="accessories">Accessories</button>
       <button class="tab-btn" data-tab="backgrounds">Backgrounds</button>
     </div>
 
+    <!--Pets-->
     <div class="tab-content">
       <div id="pets" class="tab-pane">
         <div class="item-card">
@@ -84,6 +86,7 @@
         </div>
       </div>
 
+      <!--Accessories-->
       <div id="accessories" class="tab-pane hidden">
         <div class="item-card">
           <img src="customization/accessories/bow.png" alt="Bow" />
@@ -103,6 +106,7 @@
         </div>
       </div>
 
+      <!--Backgrounds-->
       <div id="backgrounds" class="tab-pane hidden">
         <div class="item-card">
           <img src="backgrounds/forestBG.png" alt="Forest" />
